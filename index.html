@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariana Ortiz Ortiz | Sitio personal</title>
+  <meta name="author" content="Mariana Ortiz Ortiz">
+  <meta name="description" content="Sitio web personal de Mariana Ortiz Ortiz, estudiante de Ingeniería de Sistemas en la UFPSO.">
+  <style>
+    :root { --rojo:#b3121b; --oscuro:#1f2330; --gris:#5b6070; --claro:#f5f6f8; --blanco:#ffffff; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family: Arial, Helvetica, sans-serif; color:var(--oscuro); background:var(--claro); line-height:1.6; }
+    header { background:var(--oscuro); color:var(--blanco); padding:18px 6%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; position:sticky; top:0; }
+    header h1 { font-size:1.1rem; letter-spacing:.5px; }
+    nav a { color:var(--blanco); text-decoration:none; margin-left:18px; font-size:.95rem; }
+    nav a:hover { color:#ffb3b7; }
+    .hero { background:linear-gradient(135deg, var(--rojo), #6d0a10); color:var(--blanco); text-align:center; padding:80px 6%; }
+    .avatar { width:110px; height:110px; border-radius:50%; background:var(--blanco); color:var(--rojo); display:flex; align-items:center; justify-content:center; font-size:2.4rem; font-weight:bold; margin:0 auto 20px; }
+    .hero h2 { font-size:2.2rem; margin-bottom:8px; }
+    .hero p { max-width:620px; margin:0 auto; opacity:.95; }
+    main { max-width:1000px; margin:0 auto; padding:50px 6%; }
+    section { margin-bottom:50px; }
+    section h3 { font-size:1.5rem; margin-bottom:16px; border-left:5px solid var(--rojo); padding-left:12px; }
+    .tarjetas { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:18px; }
+    .tarjeta { background:var(--blanco); border-radius:10px; padding:22px; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+    .tarjeta h4 { color:var(--rojo); margin-bottom:8px; }
+    code { background:#eceef2; padding:2px 6px; border-radius:4px; font-family:Consolas, monospace; font-size:.9rem; }
+    ul.comandos { list-style:none; }
+    ul.comandos li { background:var(--blanco); margin-bottom:10px; padding:12px 16px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,.05); }
+    footer { background:var(--oscuro); color:#c9ccd4; text-align:center; padding:24px; font-size:.9rem; }
+    @media (max-width:600px) { nav a { margin-left:10px; } .hero h2 { font-size:1.7rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mariana Ortiz Ortiz</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#aprendizajes">Aprendizajes</a>
+      <a href="#comandos">Comandos Git</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="avatar">MO</div>
+    <h2>Hola, soy Mariana</h2>
+    <p>Estudiante de segundo semestre de Ingeniería de Sistemas en la Universidad Francisco de Paula Santander Ocaña. Este es mi primer sitio web publicado con GitHub Pages.</p>
+  </div>
+
+  <main>
+    <section id="sobre-mi">
+      <h3>Sobre mí</h3>
+      <p>Me interesa el desarrollo de aplicaciones web y el mantenimiento de equipos de cómputo, áreas que estoy conociendo en la asignatura Mantenimiento de Computadores y Desarrollo de Aplicaciones Web, orientada por el docente Jose Janer Barbosa León. Este sitio hace parte del Primer Parcial y reúne lo aprendido sobre control de versiones y publicación de páginas en internet.</p>
+    </section>
+
+    <section id="aprendizajes">
+      <h3>Lo que he aprendido</h3>
+      <div class="tarjetas">
+        <div class="tarjeta"><h4>Git</h4><p>Sistema de control de versiones distribuido que registra cada cambio de un proyecto y permite volver a versiones anteriores.</p></div>
+        <div class="tarjeta"><h4>GitHub</h4><p>Plataforma en la nube donde se alojan repositorios Git para compartirlos y trabajar en equipo.</p></div>
+        <div class="tarjeta"><h4>GitHub Pages</h4><p>Servicio gratuito que publica sitios web estáticos directamente desde un repositorio.</p></div>
+      </div>
+    </section>
+
+    <section id="comandos">
+      <h3>Comandos que usé</h3>
+      <ul class="comandos">
+        <li><code>git init</code> crea el repositorio local.</li>
+        <li><code>git add .</code> prepara los archivos para la confirmación.</li>
+        <li><code>git commit -m "mensaje"</code> guarda los cambios en el historial.</li>
+        <li><code>git remote add origin URL</code> enlaza el repositorio local con GitHub.</li>
+        <li><code>git push -u origin main</code> sube los cambios al repositorio remoto.</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h3>Contacto</h3>
+      <p>Universidad Francisco de Paula Santander Ocaña, Programa de Ingeniería de Sistemas, Ocaña, Norte de Santander.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mariana Ortiz Ortiz. Sitio publicado con GitHub Pages.</p>
+  </footer>
+</body>
+</html>
